@@ -1,0 +1,63 @@
+.privasy-policy {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.p-p-top {
+    margin: 0;
+    width: 100%;
+    background-color: #808080;
+    height: 30vh;
+    position: relative;
+    color: white;
+    &-text {
+        width: 50%;
+        height: 50%;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        margin: auto;
+        text-align: center;
+        align-items: center;
+        line-height: 40px;
+        
+    }
+    &-title {
+        display: block;
+        padding-top: 20px;
+        font-size: 4rem;
+        @include sp {
+            font-size: 3rem;
+        }
+        &-under {
+            font-size: 2rem;
+            @include sp {
+                font-size: 1.7rem;
+            }
+        }
+    }
+.p-item-box {
+    height: 100%;
+}
+}
+.p-p-bottom {
+    width: 100%;
+    &-wrap {
+        padding: 70px 80px 100px;
+    }
+    &-textbox {
+        line-height: 3rem;
+        padding-bottom: 2rem;
+    }
+}
+.p-p-title {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.p-p-text {
+    font-size: 1.4rem;
+}

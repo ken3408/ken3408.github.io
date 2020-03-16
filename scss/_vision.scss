@@ -1,0 +1,48 @@
+.vision {
+    background-color: #696969;
+    color: white;
+    &-wrap {
+        padding: 40px 70px;
+        display: flex;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+        width: 100%;
+        @include sp {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 35px 20px;
+            text-align: center;
+        }
+    }
+    &-text {
+        width: 60%;
+        font-size: 1.8rem;
+        line-height: 3rem;
+        @include sp {
+            width: 100%;
+            font-size: 1.7rem;
+            padding-bottom: 40px;
+        }
+        
+    }
+    &-logo {
+        margin: 0 auto;
+        width: 30%;
+        @include sp {
+            width: 100%;
+        }
+        
+        &-top {
+            font-size: 5rem;
+            letter-spacing: 0.3rem;
+            text-align: center;
+        }
+        &-bottom {
+            font-size: 2rem;
+            text-align: center;
+        }
+    }
+}
+

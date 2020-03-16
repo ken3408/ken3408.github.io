@@ -1,0 +1,719 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  font-family: "Arial";
+  height: 100%;
+  margin: 0;
+}
+body .body-inner {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  min-height: 100%;
+  padding-bottom: 200px;
+}
+
+.inner {
+  padding: 90px 150px;
+}
+@media screen and (max-width: 600px) {
+  .inner {
+    padding: 30px 20px;
+  }
+}
+
+.title {
+  position: absolute;
+  font-size: 4rem;
+  right: 50%;
+  letter-spacing: 0.5rem;
+  z-index: 20;
+  transform: translateX(50%);
+  padding: 100px 0;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 3rem;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: rgba(51, 204, 153, 0.7);
+  color: white;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-left {
+  padding-left: 50px;
+}
+@media screen and (max-width: 600px) {
+  .header-left {
+    padding-left: 25px;
+  }
+  .header-left p {
+    font-size: 1.5rem;
+  }
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+
+nav {
+  height: 100%;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  nav {
+    display: none;
+  }
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.5rem;
+}
+
+li {
+  display: inline-block;
+  padding-right: 70px;
+  padding-top: 10px;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .ham {
+    width: 60px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 7px;
+    background-color: white;
+  }
+}
+
+.first-v {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../img/map-2562138_1280.jpg);
+  background-size: cover;
+  position: relative;
+}
+.first-v_wrap {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.first-v-catch {
+  color: #0D47A1;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+}
+.first-v-catch .first-title {
+  font-size: 7rem;
+}
+@media screen and (max-width: 600px) {
+  .first-v-catch .first-title {
+    font-size: 5rem;
+  }
+}
+.first-v-catch .first-title span {
+  padding: 0 20px;
+}
+
+.arrowbox {
+  transform: translateY(300%);
+}
+
+.scroll {
+  font-size: 4rem;
+}
+@media screen and (max-width: 600px) {
+  .scroll {
+    font-size: 3rem;
+  }
+}
+
+.arrow {
+  height: 30px;
+  width: 30px;
+  border: 5px solid;
+  border-color: transparent transparent #565656 #565656;
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+.vision {
+  background-color: #696969;
+  color: white;
+}
+.vision-wrap {
+  padding: 40px 70px;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .vision-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 20px;
+    text-align: center;
+  }
+}
+.vision-text {
+  width: 60%;
+  font-size: 1.8rem;
+  line-height: 3rem;
+}
+@media screen and (max-width: 600px) {
+  .vision-text {
+    width: 100%;
+    font-size: 1.7rem;
+    padding-bottom: 40px;
+  }
+}
+.vision-logo {
+  margin: 0 auto;
+  width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .vision-logo {
+    width: 100%;
+  }
+}
+.vision-logo-top {
+  font-size: 5rem;
+  letter-spacing: 0.3rem;
+  text-align: center;
+}
+.vision-logo-bottom {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.image-set-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.image-set-wrap > .item-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.image-set-wrap > .item-box > :not(:last-child) {
+  height: 100%;
+  min-height: 0%;
+}
+
+.item-box {
+  width: 12.5%;
+  display: flex;
+}
+@media screen and (max-width: 600px) {
+  .item-box {
+    width: 25%;
+  }
+}
+.item-box img {
+  width: 100%;
+  height: 100%;
+}
+
+.works {
+  background-image: url(../img/maps-1854199_640.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0em;
+}
+.works::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.works-title {
+  position: absolute;
+  font-size: 4rem;
+  right: 50%;
+  letter-spacing: 0.5rem;
+  z-index: 20;
+  transform: translateX(50%);
+  padding: 100px 0;
+}
+@media screen and (max-width: 600px) {
+  .works-title {
+    padding: 50px 0;
+  }
+}
+
+.works-wrap {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px 0 40px 0;
+  flex-wrap: wrap;
+  width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .works-wrap {
+    flex-direction: column;
+  }
+}
+
+.works-wrap > .works-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.works-wrap > .works-item > :not(:last-child) {
+  height: 100%;
+  min-height: 0%;
+}
+
+.works-item {
+  z-index: 10;
+  width: 30%;
+  padding-bottom: 40px;
+}
+@media screen and (max-width: 600px) {
+  .works-item {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .works-item:last-child {
+    padding-bottom: 0;
+  }
+}
+
+.works-item-img {
+  width: 100%;
+}
+
+.wi-text {
+  padding: 10px 15px;
+  line-height: 3rem;
+}
+.wi-text-top {
+  font-size: 2rem;
+}
+.wi-text-midle {
+  font-size: 3.5rem;
+  letter-spacing: 0.5rem;
+}
+.wi-text-bottom {
+  font-size: 1.5rem;
+}
+
+.about-us {
+  background-color: #808080;
+  margin: 0;
+  padding: 0;
+  color: white;
+  width: 100%;
+  position: relative;
+}
+.about-us-wrap {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 18rem;
+  text-align: center;
+  line-height: 4rem;
+  letter-spacing: 0.7rem;
+}
+.about-us-wrap hr {
+  width: 40%;
+  display: inline-block;
+}
+@media screen and (max-width: 600px) {
+  .about-us-wrap hr {
+    width: 60%;
+  }
+}
+.about-us-name {
+  font-size: 3.5rem;
+}
+.about-us-text {
+  font-size: 2.5rem;
+}
+
+.about-us-founder {
+  padding-top: 2rem;
+}
+
+.about-us-founder, .about-us-tokyo, .about-us-fukuoka {
+  padding-bottom: 4rem;
+}
+
+.contact {
+  background-image: url(../img/maps-1854199_640.jpg);
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: "Zapfino";
+}
+.contact::after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.7);
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.form-wrap {
+  margin: 0 auto;
+  width: 40%;
+  padding-top: 20rem;
+  z-index: 20;
+}
+
+.contact-item {
+  position: relative;
+  z-index: 10;
+  font-size: 2rem;
+  line-height: 4rem;
+  padding-bottom: 2.5rem;
+}
+@media screen and (max-width: 600px) {
+  .contact-item {
+    font-size: 1.5rem;
+  }
+}
+.contact-item input {
+  width: 100%;
+  height: 40px;
+  outline: none;
+  background-color: white;
+  z-index: 30;
+  color: green;
+}
+
+.kome {
+  color: red;
+  padding-left: 1.2rem;
+}
+
+textarea {
+  line-height: 10rem;
+  width: 100%;
+  resize: none;
+  outline: none;
+}
+
+.btn-box {
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20rem;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  display: block;
+  padding: 10px 80px;
+  background-color: #808080;
+  position: absolute;
+  z-index: 10;
+  font-size: 2rem;
+  color: white;
+  margin-top: 3rem;
+  font-family: "Arial";
+}
+
+.click {
+  height: 100%;
+}
+
+.common {
+  width: 100%;
+}
+.common-wrap {
+  width: 100%;
+  text-align: center;
+}
+.common-blue {
+  width: 100%;
+  background-color: #0D47A1;
+  color: white;
+  padding: 10px 0;
+  font-size: 2rem;
+}
+
+.common-arrow {
+  position: relative;
+  display: inline-block;
+  padding-left: 10px;
+  z-index: 10;
+}
+
+.common-arrow::before {
+  content: '';
+  width: 10px;
+  height: 10px;
+  border: 0px;
+  border-top: solid 2px white;
+  border-right: solid 2px white;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  position: absolute;
+  margin-top: -10px;
+}
+
+.common-text {
+  padding: 50px 0;
+}
+.common-text-top {
+  font-size: 4rem;
+}
+.common-text-midle {
+  font-size: 1.5rem;
+}
+.common-text-bottom {
+  font-size: 2rem;
+  padding-top: 50px;
+}
+
+.common-icon {
+  display: block;
+  width: 10%;
+  z-index: 20;
+  float: right;
+  transform: translateY(-80px);
+}
+
+i {
+  font-size: 4.5rem;
+}
+
+.privasy-policy {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+.p-p-top {
+  margin: 0;
+  width: 100%;
+  background-color: #808080;
+  height: 30vh;
+  position: relative;
+  color: white;
+}
+.p-p-top-text {
+  width: 50%;
+  height: 50%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: auto;
+  text-align: center;
+  align-items: center;
+  line-height: 40px;
+}
+.p-p-top-title {
+  display: block;
+  padding-top: 20px;
+  font-size: 4rem;
+}
+@media screen and (max-width: 600px) {
+  .p-p-top-title {
+    font-size: 3rem;
+  }
+}
+.p-p-top-title-under {
+  font-size: 2rem;
+}
+@media screen and (max-width: 600px) {
+  .p-p-top-title-under {
+    font-size: 1.7rem;
+  }
+}
+.p-p-top .p-item-box {
+  height: 100%;
+}
+
+.p-p-bottom {
+  width: 100%;
+}
+.p-p-bottom-wrap {
+  padding: 70px 80px 100px;
+}
+.p-p-bottom-textbox {
+  line-height: 3rem;
+  padding-bottom: 2rem;
+}
+
+.p-p-title {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.p-p-text {
+  font-size: 1.4rem;
+}
+
+.footer {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  height: 35vh;
+}
+
+/*# sourceMappingURL=main.css.map */

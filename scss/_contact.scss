@@ -1,0 +1,83 @@
+.contact {
+    background-image: url(../img/maps-1854199_640.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-family: "Zapfino";
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: rgba($color: #FFFFFF, $alpha: 0.7);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+    }
+}
+.form-wrap {
+    margin: 0 auto;
+    width: 40%;
+    padding-top: 20rem;
+    z-index: 20;
+
+}
+.contact-item {
+    position: relative;
+    z-index: 10;
+    font-size: 2rem;
+    line-height: 4rem;
+    padding-bottom: 2.5rem;
+    @include sp {
+        font-size: 1.5rem;
+    }
+    
+    & input {
+        width: 100%;
+        height: 40px;
+        outline: none;
+        background-color: white;
+        z-index: 30;
+        color: green;
+    }
+}
+
+.kome {
+    color: red;
+    padding-left: 1.2rem;
+
+}
+
+textarea {
+    line-height: 10rem;
+    width: 100%;
+    resize: none;
+    outline: none;
+}
+
+.btn-box {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    display: block;
+    padding: 10px 80px;
+    background-color: #808080;
+    position: absolute;
+    z-index: 10;
+    font-size: 2rem;
+    color: white;
+    margin-top: 3rem;
+    font-family: "Arial";
+    
+}
+.click {
+    height: 100%;
+    
+}

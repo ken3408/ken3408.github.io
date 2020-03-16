@@ -1,0 +1,38 @@
+.about-us {
+    background-color: #808080;
+    margin: 0;
+    padding: 0;
+    color: white;
+    width: 100%;
+    position: relative;
+    &-wrap {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 18rem;
+        text-align: center;
+        line-height: 4rem;
+        letter-spacing: 0.7rem;
+        & hr {
+            width: 40%;
+            display: inline-block;
+            @include sp {
+                width: 60%;
+            }
+        }
+    }
+    &-name {
+        font-size: 3.5rem;
+    }
+    &-text {
+        font-size: 2.5rem;
+
+    }
+}
+.about-us-founder {
+    padding-top: 2rem;
+}
+
+.about-us-founder,.about-us-tokyo,.about-us-fukuoka {
+    padding-bottom: 4rem;
+}
+

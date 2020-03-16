@@ -1,0 +1,92 @@
+.works {
+    background-image: url(../img/maps-1854199_640.jpg);
+    background-size: cover;
+    position: relative;
+    margin: 0;
+    padding: 0em;
+
+    
+    &::after {
+        position: absolute;
+        content: "";
+        background-color: rgba($color: #FFFFFF, $alpha: 0.7);
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+
+    }
+}
+.works-title {
+    position: absolute;
+    font-size: 4rem;
+    right: 50%;
+    letter-spacing: 0.5rem;
+    z-index: 20;
+    transform: translateX(50%);
+    padding: 100px 0;
+    @include sp {
+        padding: 50px 0;
+    }
+}
+.works-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px 0 40px 0;
+    flex-wrap: wrap;
+    width: 100%;
+    @include sp {
+        flex-direction: column;
+    }
+}
+
+.works-wrap > .works-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.works-wrap > .works-item > :not(:last-child) {
+    height: 100%;
+    min-height: 0%;
+}
+
+.works-item {
+    z-index: 10;
+    width: 30%;
+    padding-bottom: 40px;
+    @include sp {
+        width: 100%;
+    }
+    @include sp {
+        
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+
+}
+// .works-item-box {
+//     width: 100%;
+//     max-width: 400px;
+//     margin: 0 auto;
+// }
+.works-item-img {
+    width: 100%;
+    
+}
+
+.wi-text {
+    padding: 10px 15px;
+    line-height: 3rem;
+    &-top {
+        font-size: 2rem;
+    }
+    &-midle {
+        font-size: 3.5rem;
+        letter-spacing: 0.5rem;
+    }
+    &-bottom {
+        font-size: 1.5rem;
+    }
+}
+

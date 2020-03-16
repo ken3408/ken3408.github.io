@@ -1,0 +1,49 @@
+.first-v {
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/map-2562138_1280.jpg);
+    background-size: cover;
+    position: relative;
+    &_wrap {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        
+    }
+}
+
+.first-v-catch {
+    color: #0D47A1;
+    text-align: center;
+    width: 100%;
+    height: 50vh;
+    & .first-title {
+        font-size: 7rem;
+        @include sp {
+            font-size: 5rem;
+        }
+        & span {
+            padding: 0 20px;
+        }
+
+    }
+}
+.arrowbox {
+    transform: translateY(300%);
+}
+.scroll {
+    font-size: 4rem;
+    @include sp {
+        font-size: 3rem;
+    }
+}
+.arrow { 
+  height: 30px;
+  width: 30px;
+  border: 5px solid;
+  border-color:  transparent transparent $gray $gray;
+  transform: rotate(-45deg);
+  margin: 0 auto;
+}
+
+
